@@ -11,4 +11,7 @@ RUN apt-get install -y mariadb-client
 RUN pip install -r requirements.txt
 
 WORKDIR /code/sample
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "sample.wsgi"]
+
+COPY docker-entrypoint.sh /usr/bin/
+RUN chmod 777 /usr/bin/docker-entrypoint.sh
+ENTRYPOINT ["docker-entrypoint.sh"]
