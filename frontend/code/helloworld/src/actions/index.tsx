@@ -1,36 +1,14 @@
-import { actionTypes } from './action-types'
-import {
-  IAddTodoAction,
-  ISetVisibilityFilterAction,
-  IToggleTodoAction,
-  IAsyncFunctionAction,
-} from './types'
-
-export const addTodo: IAddTodoAction = (id, text) => ({
-  type: actionTypes.ADD_TODO,
-  payload: {
-    id,
-    text,
-  }
-})
-
-export const setVisibilityFilter: ISetVisibilityFilterAction = filter => ({
-  type: actionTypes.SET_VISIBILITY_FILTER,
-  payload: {
-    filter,
-  }
-})
-
-export const toggleTodo: IToggleTodoAction = id => ({
-  type: actionTypes.TOGGLE_TODO,
-  payload: {
-    id
-  }
-})
-
-export const asyncFunction: IAsyncFunctionAction = id => ({
-  type: actionTypes.ASYNC_FUNCTION,
-  payload: {
-    id
-  }
-})
+/*
+ * action types
+ */
+export const ADD_NAME = 'ADD_NAME'
+/*
+ * action creators
+ */
+export interface IAddName {
+  type: string,
+  name: string
+}
+export function addName(name:string) : IAddName{
+  return { type: ADD_NAME, name: name }
+}

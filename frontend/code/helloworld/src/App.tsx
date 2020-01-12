@@ -1,13 +1,17 @@
-import * as React from 'react'
+import React, { Component } from "react"
+import AddName from './containers/AddName'
+import VisibleNameList from './containers/VisibleNameList'
 
-import AddTodo from './containers/AddTodo'
-import VisibleTodoList from './containers/VisibleTodoList'
-import Footer from './components/Footer'
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <h2>Hello React TS!</h2>
+        <AddName />
+        <VisibleNameList />
+      </div>
+    );
+  }
+}
 
-export default () => (
-  <div>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
-  </div>
-)
+export default App;
