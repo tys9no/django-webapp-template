@@ -206,3 +206,5 @@ depends on core.js for utility functions like removeChildren or quickElement
     window.Calendar = Calendar;
     window.CalendarNamespace = CalendarNamespace;
 })();
+
+

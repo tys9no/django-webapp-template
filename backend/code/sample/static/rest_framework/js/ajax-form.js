@@ -125,3 +125,5 @@ $.fn.ajaxForm = function() {
     .bind('submit.form-plugin', options, doAjaxSubmit)
     .bind('click.form-plugin', options, captureSubmittingElement);
 };
+
+

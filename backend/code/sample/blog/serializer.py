@@ -13,3 +13,4 @@ class EntrySerializer(serializers.ModelSerializer):
     class Meta:
         model = Entry
         fields = ('title', 'body', 'created_at', 'status', 'author')
+

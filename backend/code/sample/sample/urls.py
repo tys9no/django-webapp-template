@@ -23,3 +23,5 @@ urlpatterns = [
     path('api/', include(blog_router.urls)),
     path('blog/', include('blog.urls')),
 ]
+
+

@@ -10,3 +10,5 @@ class UserAdmin(admin.ModelAdmin):
 @admin.register(Entry)
 class Entry(admin.ModelAdmin):
     pass
+
+
