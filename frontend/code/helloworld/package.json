@@ -20,7 +20,6 @@
     "redux": "^4.0.5",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
-    "ts-lint": "^4.5.1",
     "typescript": "~3.7.2",
     "typescript-fsa": "^3.0.0",
     "typescript-fsa-reducers": "^1.2.1"
