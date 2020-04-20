@@ -9,7 +9,7 @@ class Entry(models.Model):
     STATUS_DRAFT = "draft"
     STATUS_PUBLIC = "public"
     STATUS_SET = (
-            (STATUS_DRAFT, "下書ぁE),
+            (STATUS_DRAFT, "下書き"),
             (STATUS_PUBLIC, "公開中"),
     )
     title = models.CharField(max_length=128)
